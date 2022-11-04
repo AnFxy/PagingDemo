@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PagingDemo</string>
+    <string name="splash_content">This Is Splash Page</string>
+    <string name="home">首页</string>
+    <string name="network">网络</string>
+    <string name="local">本地</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
