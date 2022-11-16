@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="red">#FF0000</color>
+    <color name="lightGreen">#AAFFAA</color>
+    <color name="lightRed">#FFEEEE</color>
+    <color name="borderRed">#FFE0E0</color>
+    <color name="borderBlue">#E0E0FF</color>
+    <color name="floatBlue">#EAEAFF</color>
+    <color name="lightBlue">#D0D0FF</color>
+    <color name="colorFF6961">#FF6961</color>
+    <color name="colorDB7093">#DB7093</color>
+    <color name="lightGray">#F4F4F4</color>
+    <color name="txtHint">#999999</color>
 </resources>

@@ -4,6 +4,19 @@
     <string name="home">首页</string>
     <string name="network">网络</string>
     <string name="local">本地</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment">Hello Home fragment</string>
+    <string name="net_work_fragment">Hello Net Work fragment</string>
+    <string name="local_fragment">Hello Local fragment</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <!--HomeDetailFragment Start-->
+    <string name="add_articles_title_hint">请输入标题</string>
+    <string name="add_articles_page_hint">请输入所在页面数</string>
+    <string name="add_articles_content_hint">请输入内容</string>
+    <string name="btn_select">查询</string>
+    <string name="btn_add">添加</string>
+    <string name="add_article_failed">添加文章失败，出现数据库操作异常！</string>
+    <string name="add_article_successful">成功添加文章！</string>
+    <!--HomeDetailFragment End-->
+
 </resources>

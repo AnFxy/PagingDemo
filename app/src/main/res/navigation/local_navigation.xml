@@ -6,7 +6,7 @@
     app:startDestination="@id/localFragment">
     <fragment
         android:id="@+id/localFragment"
-        android:name="com.yucfangxiaoyun.pagingdemo.LocalFragment"
+        android:name="com.yucfangxiaoyun.pagingdemo.view.fragments.LocalFragment"
         android:label="fragment_local"
         tools:layout="@layout/fragment_local" />
 </navigation>

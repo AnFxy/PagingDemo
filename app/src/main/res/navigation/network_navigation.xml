@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/netWorkFragment"
-        android:name="com.yucfangxiaoyun.pagingdemo.NetWorkFragment"
+        android:name="com.yucfangxiaoyun.pagingdemo.view.fragments.NetWorkFragment"
         android:label="fragment_net_work"
         tools:layout="@layout/fragment_net_work" />
 </navigation>

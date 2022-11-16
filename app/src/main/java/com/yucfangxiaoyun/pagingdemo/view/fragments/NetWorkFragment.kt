@@ -1,23 +1,25 @@
 package com.yucfangxiaoyun.pagingdemo.view.fragments
 
-import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import com.yucfangxiaoyun.pagingdemo.R
+import com.yucfangxiaoyun.pagingdemo.databinding.FragmentNetWorkBinding
+import com.yucfangxiaoyun.pagingdemo.view.base.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
-class NetWorkFragment : Fragment() {
+@AndroidEntryPoint
+class NetWorkFragment : BaseFragment<FragmentNetWorkBinding>() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun setLayout() {
+
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_net_work, container, false)
+    override fun getViewBinding(
+        inflater: LayoutInflater,
+        parent: ViewGroup?
+    ): FragmentNetWorkBinding =
+        FragmentNetWorkBinding.inflate(inflater, parent, false)
+
+    override fun setObserver() {
+
     }
 }

@@ -1,25 +1,34 @@
 package com.yucfangxiaoyun.pagingdemo.view.fragments
 
-import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import com.yucfangxiaoyun.pagingdemo.R
+import com.yucfangxiaoyun.pagingdemo.databinding.FragmentHomeBinding
+import com.yucfangxiaoyun.pagingdemo.databinding.FragmentHomeDetailBinding
+import com.yucfangxiaoyun.pagingdemo.view.base.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
-class HomeFragment : Fragment() {
+@AndroidEntryPoint
+class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
+    private lateinit var navController: NavController
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun setLayout() {
+        navController = findNavController()
+
+        binding.btnGoHomeDetail.setOnClickListener {
+            navController.navigate(
+                HomeFragmentDirections.goHomeDetailFragmentFromHomeFragment()
+            )
+        }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
-    }
+    override fun getViewBinding(inflater: LayoutInflater, parent: ViewGroup?): FragmentHomeBinding =
+        FragmentHomeBinding.inflate(inflater, parent, false)
 
+    override fun setObserver() {
+
+    }
 }
